@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook "apt"
+cookbook "java", "1.6.0"
+cookbook "ant"
+cookbook "sudo"
+cookbook "vim"
+cookbook "git"
+cookbook "hosts"
+cookbook "openssh"
+cookbook "openssl"
+cookbook "cloudera", :git => "git://github.com/timoschmidt/cloudera.git"
+cookbook "nutch21", :git => "git://github.com/timoschmidt/nutch21-cookbook.git"
