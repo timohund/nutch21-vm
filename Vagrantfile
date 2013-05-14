@@ -11,6 +11,7 @@ Vagrant::Config.run do |config|
        chef.add_role "nutch"
      end
 
+
   #   chef.validation_client_name = "ORGNAME-validator"
   config.vm.customize ["modifyvm", :id,"--memory", "4096"]
 end
